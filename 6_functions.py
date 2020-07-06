@@ -9,6 +9,9 @@ def greet(perem, name='', mess=''):
     # print(result)
     # print('Hello', name, '!')
     return result
+    # Без return функция вернет None - символ пустоты.
+    # Это неявный возврат.
+    # Если нужно вернуть None лучше это делать явно: return None
 
 
 print(greet('some_script', name, mess).lower())
