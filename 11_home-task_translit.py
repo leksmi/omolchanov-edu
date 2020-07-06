@@ -41,6 +41,9 @@ your_word = input('Enter word to be translited: ').lower()
 new_word_list = []
 # Iterate your word looking for interesting character
 for word in your_word:
+    # Compare word with dict's keys
     if word in char_base.keys():
+        # If word is in the dict it adds to word list
         new_word_list.append(char_base[word])
+# Make string with list and print it
 print('Your word in translit: ', ''.join(new_word_list).capitalize())
